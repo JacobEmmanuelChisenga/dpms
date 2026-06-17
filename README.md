@@ -66,7 +66,7 @@ Change these passwords before any shared or production use.
 
 ---
 
-## Deploy on Windows Server (e.g. `10.0.30.52`)
+## Deploy on Windows Server (e.g. `10.0.0.0`)
 
 1. Install **PHP 8.2+**, **Composer**, **IIS** + URL Rewrite, and **MySQL** (recommended).
 2. Clone or copy the repo to e.g. `C:\inetpub\dpms`.
