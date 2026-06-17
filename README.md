@@ -75,7 +75,7 @@ Change these passwords before any shared or production use.
    ```env
    APP_ENV=production
    APP_DEBUG=false
-   APP_URL=http://10.0.30.52
+   APP_URL=http://10.0.0.0
    ```
 
 4. Run:
