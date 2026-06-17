@@ -1,0 +1,7 @@
+/*
+ * DomPDF printable area — margins as tight as practical for landscape A4.
+ */
+@page {
+    margin: 2mm 3mm;
+    size: landscape;
+}

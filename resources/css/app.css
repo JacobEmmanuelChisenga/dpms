@@ -1,0 +1,86 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
+
+/* Admin shell: main area fills space beside fixed sidebar */
+html,
+body {
+    overflow-x: hidden;
+}
+
+@layer components {
+    .dpms-card {
+        @apply bg-white rounded-xl shadow-sm border border-gray-100;
+    }
+
+    .dpms-stat-card {
+        @apply dpms-card p-5 flex flex-col;
+    }
+
+    .dpms-sidebar-link .fa-fw {
+        width: 1.25rem;
+    }
+
+    .dpms-sidebar-link {
+        @apply flex items-center gap-3 px-4 py-2.5 text-sm text-white/90 rounded-lg transition-colors;
+    }
+
+    .dpms-sidebar-link:hover {
+        @apply bg-white/10 text-white;
+    }
+
+    .dpms-sidebar-link-active {
+        @apply bg-white/15 text-white font-medium;
+    }
+
+    .dpms-sidebar-link-emphasis {
+        @apply border border-white/20 bg-white/10 font-medium;
+    }
+
+    .dpms-sidebar-link-emphasis:hover {
+        @apply bg-white/15;
+    }
+
+    .dpms-sidebar-sublink {
+        @apply block px-4 py-2 text-sm text-white/75 rounded-lg hover:bg-white/10 hover:text-white;
+    }
+
+    .dpms-sidebar-sublink-active {
+        @apply bg-white/10 text-white font-medium;
+    }
+
+    .dpms-btn-primary {
+        @apply inline-flex items-center justify-center px-4 py-2 bg-dpms-700 text-white text-sm font-medium rounded-lg hover:bg-dpms-800 transition;
+    }
+
+    .dpms-auth-brand {
+        @apply bg-gradient-to-br from-dpms-900 via-dpms-sidebar to-dpms-950;
+    }
+
+    .dpms-auth-card {
+        @apply bg-white rounded-2xl shadow-xl shadow-gray-200/60 border border-gray-100 p-8 sm:p-10;
+    }
+
+    .dpms-label {
+        @apply block text-sm font-medium text-gray-700;
+    }
+
+    .dpms-input {
+        @apply block w-full rounded-lg border-gray-300 shadow-sm text-sm
+            focus:border-dpms-600 focus:ring-dpms-600;
+    }
+
+    .dpms-table th {
+        @apply text-left text-xs font-semibold uppercase tracking-wide text-gray-500 py-3 px-4;
+    }
+
+    .dpms-table td {
+        @apply py-3 px-4 text-sm text-gray-700 border-t border-gray-100;
+    }
+}
